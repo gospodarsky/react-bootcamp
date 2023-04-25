@@ -1,5 +1,7 @@
+import { Counter } from './Counter';
+
 export const App = () => (
-  <h1 className="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-)
+  <>
+    <Counter />
+  </>
+);
