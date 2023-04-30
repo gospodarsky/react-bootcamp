@@ -24,7 +24,7 @@ export const SearchForm = ({ onSearch, query }: { onSearch: (query: string) => v
         onChange={handleChange}
       />
       <button
-        className="text-4xl bg-gray-800 text-gray-200 px-8 rounded-xl outline-none focus:outline-4 focus:outline-gray-200 hover:outline-4 hover:outline-gray-200"
+        className="text-4xl bg-gray-800 text-gray-200 px-8 rounded-xl outline-none focus:outline-4 focus:outline-gray-200 hover:bg-gray-900"
         onClick={() => onSearch(value)}
       >Search</button>
     </div>
