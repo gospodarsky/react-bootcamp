@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 export const SearchForm = ({ onSearch, query }: { onSearch: (query: string) => void, query: string }) => {
-  const [value, setQuery] = useState(query);
+  const [value, setQuery] = useState<string>(query);
 
   const handleKeyDown = (event: React.KeyboardEvent) => {
     if (event.key === 'Enter') {

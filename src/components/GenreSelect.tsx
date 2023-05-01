@@ -5,8 +5,6 @@ export const GenreSelect = (
 ) => {
   const [genre, setGenre] = useState<string | undefined>(selectedGenre);
   const isAllSelected = !genres.find(value => value === genre);
-  const highlightedClasses = 'border-b-4 border-gray-200';
-  const highlightedEffectClasses = 'hover:border-b-4 hover:border-gray-200 focus:border-b-4 focus:border-gray-200';
 
   const handleAllClick = () => {
     setGenre(undefined);
@@ -18,6 +16,8 @@ export const GenreSelect = (
     onSelect(value);
   };
 
+  const highlightedClasses = 'border-b-4 border-gray-200';
+  const highlightedEffectClasses = 'hover:border-b-4 hover:border-gray-200 focus:border-b-4 focus:border-gray-200';
   return (
     <ul className="flex justify-center space-x-4 pt-8 text-3xl text-gray-200">
       <li>
